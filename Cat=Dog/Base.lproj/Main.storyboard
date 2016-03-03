@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Dog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-Cz-NC9">
+                                <rect key="frame" x="32" y="451" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AVN-Oe-lqx"/>
+                                    <constraint firstAttribute="width" constant="125" id="BGa-VM-UUd"/>
+                                </constraints>
+                                <state key="normal" title="Yellow Eyed Cat"/>
+                                <connections>
+                                    <action selector="YellowButoonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eC-8Z-cpQ"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals___Cats__Young_black_cat_with_yellow_eyes_044889_" translatesAutoresizingMaskIntoConstraints="NO" id="KP7-6C-nOv">
+                                <rect key="frame" x="20" y="268" width="137" height="93"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grey-cat-with-blue-eyes-close-up-preview" translatesAutoresizingMaskIntoConstraints="NO" id="415-fQ-Id2">
+                                <rect key="frame" x="177" y="268" width="178" height="87"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lon-Pa-agQ">
+                                <rect key="frame" x="195" y="451" width="131" height="30"/>
+                                <state key="normal" title="Blue Eyed Cat"/>
+                                <connections>
+                                    <action selector="BlueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y7d-NN-vck"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lon-Pa-agQ" firstAttribute="leading" secondItem="dxG-Cz-NC9" secondAttribute="trailing" constant="39" id="83j-pU-OvX"/>
+                            <constraint firstItem="KP7-6C-nOv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Dgd-ng-HuQ"/>
+                            <constraint firstItem="KP7-6C-nOv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="248" id="Hce-3v-pu7"/>
+                            <constraint firstItem="dxG-Cz-NC9" firstAttribute="baseline" secondItem="Lon-Pa-agQ" secondAttribute="firstBaseline" id="Uxr-4H-4YE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dxG-Cz-NC9" secondAttribute="bottom" constant="186" id="VMD-H6-Y1e"/>
+                            <constraint firstItem="Lon-Pa-agQ" firstAttribute="top" secondItem="415-fQ-Id2" secondAttribute="bottom" constant="96" id="YOM-OH-JEg"/>
+                            <constraint firstItem="dxG-Cz-NC9" firstAttribute="top" secondItem="KP7-6C-nOv" secondAttribute="bottom" constant="90" id="Zck-hK-Tk6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="415-fQ-Id2" secondAttribute="trailing" constant="4" id="cFW-Aq-nST"/>
+                            <constraint firstItem="dxG-Cz-NC9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="hIc-wN-KYn"/>
+                            <constraint firstItem="Lon-Pa-agQ" firstAttribute="baseline" secondItem="dxG-Cz-NC9" secondAttribute="firstBaseline" id="iDa-4N-gOb"/>
+                            <constraint firstItem="KP7-6C-nOv" firstAttribute="top" secondItem="415-fQ-Id2" secondAttribute="top" id="ifk-jg-ORm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lon-Pa-agQ" secondAttribute="trailing" constant="32" id="k8x-mL-veK"/>
+                            <constraint firstItem="415-fQ-Id2" firstAttribute="leading" secondItem="KP7-6C-nOv" secondAttribute="trailing" constant="20" id="kDe-oC-VvP"/>
+                            <constraint firstItem="dxG-Cz-NC9" firstAttribute="trailing" secondItem="KP7-6C-nOv" secondAttribute="trailing" id="nPz-J5-8e6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="BlueButton" destination="Lon-Pa-agQ" id="18G-H8-gnH"/>
+                        <outlet property="BlueCatPic" destination="415-fQ-Id2" id="nEK-tK-obB"/>
+                        <outlet property="YellowButton" destination="dxG-Cz-NC9" id="GbI-IU-dEY"/>
+                        <outlet property="YellowCatPic" destination="KP7-6C-nOv" id="WQa-9v-bVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="428.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Animals___Cats__Young_black_cat_with_yellow_eyes_044889_" width="1920" height="1200"/>
+        <image name="Grey-cat-with-blue-eyes-close-up-preview" width="980" height="581"/>
+    </resources>
+</document>
